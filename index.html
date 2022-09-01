@@ -11,44 +11,56 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="" name="calculator">
-        <table>
-            <tr>
-                <td colspan="4"><input type="text" id="display" disabled></td>
-            </tr>
-            
-            <tr>
-                <td><input type="button" value="√" onclick="calculator.display.value = Math.sqrt(calculator.display.value)"></td>
-                <td><input type="button" value="C" onclick="calculator.display.value =''"></td>
-                <td><input type="button" value="DEL" onclick="calculator.display.value = calculator.display.value.slice(0,-1)"></td>
-                <td><input type="button" value="%" onclick="calculator.display.value += '%'"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="1" onclick="calculator.display.value += '1'"></td>
-                <td><input type="button" value="2" onclick="calculator.display.value += '2'"></td>
-                <td><input type="button" value="3" onclick="calculator.display.value += '3'"></td>
-                <td><input type="button" value="+" onclick="calculator.display.value += '+'"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="4" onclick="calculator.display.value += '4'"></td>
-                <td><input type="button" value="5" onclick="calculator.display.value += '5'"></td>
-                <td><input type="button" value="6" onclick="calculator.display.value += '6'"></td>
-                <td><input type="button" value="-" onclick="calculator.display.value += '-'"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="7" onclick="calculator.display.value += '7'"></td>
-                <td><input type="button" value="8" onclick="calculator.display.value += '8'"></td>
-                <td><input type="button" value="9" onclick="calculator.display.value += '9'"></td>
-                <td><input type="button" value="*" onclick="calculator.display.value += '*'"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="." onclick="calculator.display.value += '.'"></td>
-                <td><input type="button" value="0" onclick="calculator.display.value += '0'"></td>
-                <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value) "></td>
-                <td><input type="button" value="/" onclick="calculator.display.value += '/'"></td>
-               
-            </tr>
-        </table>
-    </form>
+    <header><br><br>
+        <h1 class="footer">Welcome to Calculate Me!!!</h1>
+    </header>
+    <main>
+        <section class="style-part">
+            <form action="" name="calculator">
+                <table>
+                    <tr>
+                        <td colspan="4"><input type="text" id="display" disabled></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="button" value="√" onclick="calculator.display.value = Math.sqrt(calculator.display.value)"></td>
+                        <td><input type="button" value="C" onclick="calculator.display.value =''"></td>
+                        <td><input type="button" value="DEL" onclick="calculator.display.value = calculator.display.value.slice(0,-1)"></td>
+                        <td><input type="button" value="%" onclick="calculator.display.value += '%'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="calculator.display.value += '1'"></td>
+                        <td><input type="button" value="2" onclick="calculator.display.value += '2'"></td>
+                        <td><input type="button" value="3" onclick="calculator.display.value += '3'"></td>
+                        <td><input type="button" value="+" onclick="calculator.display.value += '+'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="calculator.display.value += '4'"></td>
+                        <td><input type="button" value="5" onclick="calculator.display.value += '5'"></td>
+                        <td><input type="button" value="6" onclick="calculator.display.value += '6'"></td>
+                        <td><input type="button" value="-" onclick="calculator.display.value += '-'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="calculator.display.value += '7'"></td>
+                        <td><input type="button" value="8" onclick="calculator.display.value += '8'"></td>
+                        <td><input type="button" value="9" onclick="calculator.display.value += '9'"></td>
+                        <td><input type="button" value="*" onclick="calculator.display.value += '*'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="." onclick="calculator.display.value += '.'"></td>
+                        <td><input type="button" value="0" onclick="calculator.display.value += '0'"></td>
+                        <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value) "></td>
+                        <td><input type="button" value="/" onclick="calculator.display.value += '/'"></td>
+                       
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">
+            <small>©2022. Simple Calculator. All rights reserved.Farhana,Bangladesh.</small>
+        </p>
+    </footer>
 </body>
 </html>
