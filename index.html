@@ -18,6 +18,12 @@
             </tr>
             
             <tr>
+                <td><input type="button" value="√" onclick="calculator.display.value = Math.sqrt(calculator.display.value)"></td>
+                <td><input type="button" value="C" onclick="calculator.display.value =''"></td>
+                <td><input type="button" value="DEL" onclick="calculator.display.value = calculator.display.value.slice(0,-1)"></td>
+                <td><input type="button" value="%" onclick="calculator.display.value = Math.percentage(calculator.display.value)"></td>
+            </tr>
+            <tr>
                 <td><input type="button" value="1" onclick="calculator.display.value += '1'"></td>
                 <td><input type="button" value="2" onclick="calculator.display.value += '2'"></td>
                 <td><input type="button" value="3" onclick="calculator.display.value += '3'"></td>
@@ -36,10 +42,11 @@
                 <td><input type="button" value="*" onclick="calculator.display.value += '*'"></td>
             </tr>
             <tr>
-                <td><input type="button" value="c" onclick="calculator.display.value = calculator.display.value.slice(0,-1)"></td>
+                <td><input type="button" value="." onclick="calculator.display.value += '.'"></td>
                 <td><input type="button" value="0" onclick="calculator.display.value += '0'"></td>
                 <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value) "></td>
                 <td><input type="button" value="/" onclick="calculator.display.value += '/'"></td>
+               
             </tr>
         </table>
     </form>
